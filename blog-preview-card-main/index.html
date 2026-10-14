@@ -24,31 +24,62 @@
     body{
       font-family: Figtree, sans-serif;
       background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .card {
       background-color: hsl(0, 0%, 100%);
-      width: 300px;
+      width: 376px;
+      height: 100%;
+      border-radius: 20px;
+      border: 1px solid hsl(0, 0%, 7%);
+      box-shadow: 8px 8px hsl(0, 0%, 7%);
+      padding: 24px;
     }
 
     button {
+      font-family: Figtree, sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 4px 12px;
+      border-radius: 4px;
       background-color: hsl(47, 88%, 63%);
       color: hsl(0, 0%, 7%);
       border: none;
       cursor: pointer;
     }
-    h5{
+    #title{
       color: hsl(0, 0%, 7%);
+      font-size: 24px;
+      font-weight: bold;
     }
-    h1{
+    #date{
       color: hsl(0, 0%, 7%);
+      font-size: 14px;
     }
     p{
       color: hsl(0, 0%, 42%);
       font-size: 16px;
     }
-    h6{
+    #tutor_name{
       color: hsl(0, 0%, 7%);
+    }
+    .grid_tutor{
+      display: flex;
+      align-items: center;
+      flex-flow: row;
+    }
+    .tutor_img{
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+    }
+    .article_img{
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 24px;
     }
 
 
@@ -59,8 +90,7 @@
 
 
 
-
-    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution { font-size: 0.6875rem; display:flex; position: fixed; bottom: 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -69,19 +99,19 @@
   <div class="card">
     <img src="./assets/images/illustration-article.svg" alt="Article Illustration" class="article_img"/>
     <button type="url">Learning</button>
-    <h5>Published 21 Dec 2023</h5>
-    <h1>HTML & CSS foundations</h1>
+    <p id="date">Published 21 Dec 2023</p>
+    <p id="title">HTML & CSS foundations</p>
     <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
     <div class="grid_tutor">
       <img src="./assets/images/image-avatar.webp" alt="Greg Hooper" class="tutor_img"/>
       <h6>Greg Hooper</h6>
-    </div>
+    </div> 
   </div>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://ak-noice.github.io/FMN/">AK<a>.
-  </footer>
+  </footer> 
 </body>
 </html>
